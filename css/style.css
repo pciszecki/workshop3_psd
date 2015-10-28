@@ -1,0 +1,230 @@
+html {
+  font-size: 14px; }
+
+* {
+  margin: auto;
+  font-family: "Lato", sans-serif; }
+
+.grid-container {
+  width: 100%;
+  max-width: 1170px; }
+
+.grid-container * {
+  box-sizing: border-box; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 24.99%; }
+
+.col-4 {
+  width: 33.32%; }
+
+.col-5 {
+  width: 41.65%; }
+
+.col-6 {
+  width: 49.98%; }
+
+.col-7 {
+  width: 58.31%; }
+
+.col-8 {
+  width: 66.64%; }
+
+.col-9 {
+  width: 74.97%; }
+
+.col-10 {
+  width: 83.3%; }
+
+.col-11 {
+  width: 91.63%; }
+
+.col-12 {
+  width: 99.96%; }
+
+header {
+  color: white;
+  background: url("../images/Bhagaskara_01.jpg") no-repeat;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: contain;
+  height: 0; }
+
+.jumbotron {
+  margin-bottom: 15%; }
+  .jumbotron h1 {
+    text-align: center;
+    padding-top: 2%;
+    margin-bottom: 3%;
+    font-size: 4rem; }
+  .jumbotron h1 span {
+    font-size: 4rem;
+    color: #9f449b; }
+  .jumbotron h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1%; }
+  .jumbotron p {
+    text-align: center;
+    font-size: 1rem; }
+
+nav .pictureSize {
+  margin: 5% 0;
+  width: 80%; }
+nav .pictureUpMenu {
+  margin-top: -15%; }
+nav .headerMenuDiv {
+  background-size: 85% auto;
+  background-image: url("../images/icon-base.png");
+  background-repeat: no-repeat; }
+
+.scroller {
+  padding-left: 42%;
+  margin-top: -3%; }
+
+.mainMenu-container {
+  color: #676782; }
+  .mainMenu-container span {
+    color: #9f449b; }
+  .mainMenu-container .logoMenu {
+    font-size: 2rem;
+    margin-top: 3%; }
+  .mainMenu-container .mainMenu {
+    font-size: 1.5rem;
+    margin-top: 3%;
+    padding: 0; }
+  .mainMenu-container .mainMenu:hover {
+    color: #A957A5; }
+
+.featureBackground {
+  background-color: #eeeeee;
+  width: 100%;
+  margin-top: 2%; }
+  .featureBackground .feature {
+    color: #676782;
+    padding-bottom: 7%; }
+    .featureBackground .feature #heart {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      background-size: 52%;
+      width: 59%;
+      background-image: url("../images/aboutus/heatrIcon.png");
+      background-repeat: no-repeat;
+      padding: 56% 50% 10% 50%;
+      background-position: center; }
+      .featureBackground .feature #heart:hover {
+        background-image: url("../images/aboutus/heatrIconViolet.png");
+        background-repeat: no-repeat; }
+    .featureBackground .feature #diamond {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      background-size: 52%;
+      width: 59%;
+      background-image: url("../images/aboutus/diamondIcon_13.png");
+      background-repeat: no-repeat;
+      padding: 56% 50% 10% 50%;
+      background-position: center; }
+      .featureBackground .feature #diamond:hover {
+        background-image: url("../images/aboutus/heatrIconViolet.png");
+        background-repeat: no-repeat; }
+    .featureBackground .feature #teaCup {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      background-size: 52%;
+      width: 59%;
+      background-image: url("../images/aboutus/teaIcon_16.png");
+      background-repeat: no-repeat;
+      padding: 56% 50% 10% 50%;
+      background-position: center; }
+      .featureBackground .feature #teaCup:hover {
+        background-image: url("../images/aboutus/heatrIconViolet.png");
+        background-repeat: no-repeat; }
+    .featureBackground .feature #smartphone {
+      margin-top: 10%;
+      margin-bottom: 5%;
+      background-size: 52%;
+      width: 59%;
+      background-image: url("../images/aboutus/phoneIcon_18.png");
+      background-repeat: no-repeat;
+      padding: 56% 50% 10% 50%;
+      background-position: center; }
+      .featureBackground .feature #smartphone:hover {
+        background-image: url("../images/aboutus/heatrIconViolet.png");
+        background-repeat: no-repeat; }
+    .featureBackground .feature h2 {
+      text-align: center;
+      margin-bottom: 15%; }
+    .featureBackground .feature p {
+      font-size: 1.5rem;
+      margin-right: 10%; }
+
+.aboutUs .aboutUsHead {
+  text-align: center;
+  padding: 5% 0 5% 0; }
+.aboutUs .mockUp img {
+  width: 100%; }
+.aboutUs .abboutUsText {
+  text-align: center;
+  line-height: 2.0; }
+  .aboutUs .abboutUsText p {
+    padding-bottom: 25%; }
+.aboutUs .buttonAboutUs {
+  float: left; }
+.aboutUs .PurpleLearn {
+  border: 20px solid #9f449b;
+  box-shadow: 0 1px 1px #888888;
+  background: #9f449b;
+  color: white;
+  vertical-align: bottom; }
+
+.quoteWidth {
+  background-image: url("../images/quoteBackground_32.png");
+  background-repeat: no-repeat;
+  padding-bottom: 34%;
+  background-size: contain;
+  height: 0; }
+  .quoteWidth .iconQuote {
+    margin: 15% 0 5% 0;
+    background-image: url("../images/icon-base.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain; }
+  .quoteWidth img {
+    display: block;
+    margin: auto; }
+  .quoteWidth .textQuote {
+    text-align: center;
+    font-size: 2rem;
+    color: white; }
+
+.ourTeam .ourTeamLogo {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 8%; }
+.ourTeam .arrowLeft {
+  padding-left: 45%; }
+.ourTeam .profilPicture {
+  margin-top: 8%;
+  background-image: url("../images/ourteam/pictureProfil_03.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 65%;
+  height: 0; }
+
+/*# sourceMappingURL=style.css.map */

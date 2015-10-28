@@ -1,0 +1,252 @@
+$firstfontColor: white;
+$thirdfontColor: rgba(103,103,130, 1);
+$secondColor: rgba(159, 68, 155, 1);
+$fontFamily: 'Lato', sans-serif;
+
+
+html {
+  font-size: 14px;
+}
+* {
+  margin: auto;
+  font-family: $fontFamily;
+}
+.grid-container {
+  width: 100%;
+  max-width: 1170px;
+}
+.grid-container *{
+  box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+ // border: 1px solid deeppink;
+}
+$maxCol: 12;
+$mainWidthCol: 8.33%;
+@for $i from 1 through $maxCol {
+  .col-#{$i} {
+    width:($mainWidthCol)*$i;
+  }
+}
+header {
+  color: $firstfontColor;
+  background: url("../images/Bhagaskara_01.jpg") no-repeat;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: contain;
+  height: 0;
+}
+.jumbotron {
+  margin-bottom: 15%;
+  h1 {
+    text-align: center;
+    padding-top: 2%;
+    margin-bottom: 3%;
+    font-size: 4rem;
+  }
+  h1 span {
+    font-size: 4rem;
+    color: $secondColor;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1%;
+  }
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+nav {
+  .pictureSize{
+    margin: 5% 0;
+    width: 80%;
+  }
+  .pictureUpMenu {
+    margin-top: -15%;
+  }
+  .headerMenuDiv {
+    background-size: 85% auto;
+    background-image: url("../images/icon-base.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.scroller {
+  padding-left: 42%;
+  margin-top: -3%;
+}
+
+.mainMenu-container {
+  color: $thirdfontColor;
+  span {
+    color: $secondColor;
+  }
+  .logoMenu {
+    font-size: 2rem;
+    margin-top: 3%;
+  }
+  .mainMenu {
+    font-size: 1.5rem;
+    margin-top: 3%;
+    padding: 0;
+  }
+  .mainMenu:hover {
+    color: #A957A5;
+  }
+}
+
+.featureBackground {
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  margin-top: 2%;
+  .feature {
+    color: $thirdfontColor;
+    padding-bottom: 7%;
+      #heart {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        background-size: 52%;
+        width: 59%;
+        background-image: url("../images/aboutus/heatrIcon.png");
+        background-repeat: no-repeat;
+        padding: 56% 50% 10% 50%;
+        background-position: center;
+        &:hover {
+          background-image: url("../images/aboutus/heatrIconViolet.png");
+          background-repeat: no-repeat;
+        }
+      }
+      #diamond {
+         margin-top: 10%;
+         margin-bottom: 5%;
+         background-size: 52%;
+         width: 59%;
+         background-image: url("../images/aboutus/diamondIcon_13.png");
+         background-repeat: no-repeat;
+         padding: 56% 50% 10% 50%;
+         background-position: center;
+         &:hover {
+           background-image: url("../images/aboutus/heatrIconViolet.png");
+           background-repeat: no-repeat;
+         }
+       }
+      #teaCup {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        background-size: 52%;
+        width: 59%;
+        background-image: url("../images/aboutus/teaIcon_16.png");
+        background-repeat: no-repeat;
+        padding: 56% 50% 10% 50%;
+        background-position: center;
+        &:hover {
+          background-image: url("../images/aboutus/heatrIconViolet.png");
+          background-repeat: no-repeat;
+        }
+      }
+      #smartphone {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        background-size: 52%;
+        width: 59%;
+        background-image: url("../images/aboutus/phoneIcon_18.png");
+        background-repeat: no-repeat;
+        padding: 56% 50% 10% 50%;
+        background-position: center;
+        &:hover {
+          background-image: url("../images/aboutus/heatrIconViolet.png");
+          background-repeat: no-repeat;
+        }
+      }
+    h2 {
+      text-align: center;
+      margin-bottom: 15%;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-right: 10%;
+    }
+  }
+}
+
+.aboutUs {
+  .aboutUsHead {
+    text-align: center;
+    padding: 5% 0 5% 0;
+  }
+  .mockUp {
+    img {
+      width: 100%;
+    }
+  }
+  .abboutUsText {
+    text-align: center;
+    line-height: 2.0;
+    p {
+      padding-bottom: 25%;
+    }
+  }
+  .buttonAboutUs {
+    float: left;
+  }
+  .PurpleLearn {
+    border: 20px solid #9f449b;
+    box-shadow: 0 1px 1px #888888;
+    background: #9f449b;
+    color: white;
+    vertical-align: bottom;
+  }
+}
+.quoteWidth {
+  background-image: url('../images/quoteBackground_32.png');
+  background-repeat: no-repeat;
+  padding-bottom: 34%;
+  background-size: contain;
+  height: 0;
+  .iconQuote {
+    margin: 15% 0 5% 0;
+    background-image: url("../images/icon-base.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+  .textQuote {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+  }
+}
+.ourTeam {
+.ourTeamLogo {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 8%;
+}
+  .arrowLeft {
+    padding-left: 45%;
+  }
+  .profilPicture {
+    margin-top: 8%;
+    background-image: url('../images/ourteam/pictureProfil_03.gif');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 65%;
+    height: 0;
+  }
+}
