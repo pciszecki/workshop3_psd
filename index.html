@@ -10,48 +10,70 @@
 </head>
 <body>
     <header>
-        <div class="row jumbotron grid-container">
+        <div class="row jumbotron grid-container" id="partOne">
             <h1>Bhagas<span>kara</span>.</h1>
             <h2>Fusce rutrum pretium lorem semper nulla</h2>
             <p>Vestibulum ornare cursus nisl, fermentum tincidunt libero pretium et. Maecenas interdum ligula non fermentum fringilla</p>
         </div>
-        <nav class="headerMenu grid-container">
+        <nav class="headerMenu grid-container" id="partTwo">
             <div class="col-2 headerMenuDiv">
-                <img class="pictureSize" src="images/aboutIcon.png">
+               <a href="#partThree">
+                   <img class="pictureSize" src="images/aboutIcon.png">
+               </a>
             </div>
             <div class="col-2 headerMenuDiv">
-                <img class="pictureSize" src="images/teamIcon.png">
+               <a href="#partFour">
+                   <img class="pictureSize" src="images/teamIcon.png">
+               </a>
             </div>
             <div class="col-2 headerMenuDiv pictureUpMenu">
-                <img class="pictureSize" src="images/servicesIcon.png">
+                <a href="#partFive">
+                    <img class="pictureSize" src="images/servicesIcon.png">
+                </a>
             </div>
             <div class="col-2 headerMenuDiv pictureUpMenu">
-                <img class="pictureSize" src="images/portfolio_03.png">
+                <a href="#partSix">
+                    <img class="pictureSize" src="images/portfolio_03.png">
+                </a>
             </div>
             <div class="col-2 headerMenuDiv">
-                <img class="pictureSize" src="images/blogIcon_03.png">
+                <a href="#partEight" class="scrollerBlog">
+                    <img class="pictureSize" src="images/blogIcon_03.png">
+                </a>
             </div>
             <div class="col-2 headerMenuDiv">
-                <img class="pictureSize" src="images/contactIcon_03.png">
+               <a href="#partSeven" class="scrollerContact">
+                   <img class="pictureSize" src="images/contactIcon_03.png">
+               </a>
             </div>
         </nav>
         <div class="scrollerContainer grid-container">
             <div class="scroller col-12">
-                <a href="#"><img src="images/aboutIcon.png"></a>
+                <a href="#partSeven"><img src="images/aboutIcon.png"></a>
             </div>
         </div>
     </header>
     <nav class="row mainMenu-container grid-container">
         <div class="logoMenu col-4">Bhagas<span>kara</span>.</div>
-        <div class="mainMenu col-1">Home</div>
-        <div class="mainMenu col-1">About</div>
-        <div class="mainMenu col-1">Team</div>
-        <div class="mainMenu col-1">Services</div>
-        <div class="mainMenu col-1">Portfolio</div>
-        <div class="mainMenu col-1">Blog</div>
-        <div class="mainMenu col-1">Contact</div>
+        <div class="mainMenu col-1"><a href="#">Home</a></div>
+        <div class="mainMenu col-1">
+            <a href="#partThree">About</a>
+        </div>
+        <div class="mainMenu col-1"><a href="#partFour">Team</a></div>
+        <div class="mainMenu col-1">
+            <a href="#partFive">Services</a>
+        </div>
+        <div class="mainMenu col-1">
+            <a href="#partSix">Portfolio</a>
+        </div>
+        <div class="mainMenu col-1">
+            <a href="#partEight">Blog</a>
+        </div>
+        <div class="mainMenu col-1">
+            <a href="#partSeven" class="scrollerContact">Contact</a>
+        </div>
     </nav>
-    <div class="featureBackground">
+    <div class="featureBackground" id="partEight">
         <article class="row grid-container feature">
             <div class="featureContent col-3 heart">
                 <div class="featurePicture" id="heart"></div>
@@ -87,9 +109,9 @@
             </div>
         </article>
     </div>
-    <article class="row grid-container aboutUs">
+    <section class="row grid-container aboutUs" id="partThree">
         <div class="aboutUsHead col-12">
-            <h2>About Us</h2>
+            <p>About Us</p>
         </div>
         <div class="mockUp col-6">
             <img src="images/learnMoreButton_25.png">
@@ -98,32 +120,248 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="buttonAboutUs"><span class="PurpleLearn">Learn more</span></div>
-    </article>
-    <article class="row quoteWidth">
+    </section>
+    <section class="row quoteWidth">
         <div class="grid-container quoteBase">
             <div class="iconQuote col-12"><img src="images/eduIcon_33.png"></div>
             <div class="textQuote col-12"><h2>We lorem and ipsum aliquam</h2></div>
         </div>
-    </article>
-    <section class="row ourTeam">
+    </section>
+    <section class="row ourTeam" id="partFour">
         <div class="grid-container ourTeamCom">
             <div class="col-12 ourTeamLogo">Our <span>team</span></div>
             <div class="col-12 arrowLeft">
                 <a href="#"><img src="images/ourteam/arrowleft.gif"></a>
                 <a href="#"><img src="images/ourteam/arrowright.gif"></a>
             </div>
-            <div class="col-4 teamMember">
+            <div class="col-4 teamMember" id="member1">
                 <div class="profilPicture"></div>
-                <h1 class="memberName">ANNE HATHAWAY</h1>
-                <p class="memberJob">CEO/Marketing Guru</p>
-                <p class="memberContact"></p>
+                <div class="teamInfo">
+                    <h1 class="memberName">ANNE HATHAWAY</h1>
+                    <p class="memberJob">CEO/Marketing Guru</p>
+                    <p class="memberContact"></p>
+                    <p class="channalMember">
+                        <a href="#"><img src="images/ourteam/facebook_10.gif"></a>
+                        <a href="#"><img src="images/ourteam/google_12.gif" class="googleLink"></a>
+                    </p>
+                </div>
             </div>
-            <div class="col-4 teamMember">
-
+            <div class="col-4 teamMember" id="member2">
+                <div class="profilPicture"></div>
+                <div class="teamInfo">
+                    <h1 class="memberName">ANNE HATHAWAY</h1>
+                    <p class="memberJob">CEO/Marketing Guru</p>
+                    <p class="memberContact"></p>
+                    <p class="channalMember">
+                        <a href="#"><img src="images/ourteam/facebook_10.gif"></a>
+                        <a href="#"><img src="images/ourteam/google_12.gif" class="googleLink"></a>
+                    </p>
+                </div>
             </div>
-            <div class="col-4 teamMember">
-
+            <div class="col-4 teamMember" id="member3">
+                <div class="profilPicture"></div>
+                <div class="teamInfo">
+                    <h1 class="memberName">ANNE HATHAWAY</h1>
+                    <p class="memberJob">CEO/Marketing Guru</p>
+                    <p class="memberContact"></p>
+                    <p class="channalMember">
+                        <a href="#"><img src="images/ourteam/facebook_10.gif"></a>
+                        <a href="#"><img src="images/ourteam/google_12.gif" class="googleLink"></a>
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+    <section class="row ourSkills">
+        <div class="grid-container">
+            <div class="col-12 ourSkillsLogo">
+                Our <span>skills</span>
+            </div>
+            <div class="col-6 webMarg">
+                <div class="bell-container web">
+                    <span class="headerWeb"><b>WEB DESIGN</b></span><span class="exp">90%</span>
+                    <div class="bell-background">
+                        <span class="bell-purple"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 webMarg">
+                <div class="bell-container graphic">
+                    <span class="headerGraphic"><b>GRAPHIC DESIGN</b></span><span class="exp">70%</span>
+                    <div class="bell-background">
+                        <span class="bell-purple purpleGraphic"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 webMarg">
+                <div class="bell-container htmlCss">
+                    <span class="headerHtmlCss"><b>HTML / CSS</b></span><span class="exp">75%</span>
+                    <div class="bell-background">
+                        <span class="bell-purple purpleHtml"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 webMarg">
+                <div class="bell-container uiUX">
+                    <span class="headeruiUX"><b>UI / UX</b></span><span class="exp">85%</span>
+                    <div class="bell-background">
+                        <span class="bell-purple uiUxProc"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row servicesWidth" id="partFive">
+        <div class="grid-container quoteBase">
+            <div class="iconServices col-12"><img src="images/comicDialogIcon_43.png"></div>
+            <div class="textServices col-12"><h2>Our services will lorem and ipsum <br>your aliquam</h2></div>
+        </div>
+    </section>
+    <section class="slider-container">
+        <div class="row slider-main">
+            <div class="grid-container slider-grid">
+                <div class="col-3 slider-info">
+                    <p class="biggerInfo">365</p>
+                    <p class="greyInfo">Lorem ipsum</p>
+                </div>
+                <div class="col-3 slider-info">
+                    <p class="biggerInfo">365</p>
+                    <p class="greyInfo">Lorem ipsum</p>
+                </div>
+                <div class="col-3 slider-info">
+                    <p class="biggerInfo">365</p>
+                    <p class="greyInfo">Lorem ipsum</p>
+                </div>
+                <div class="col-3 slider-info">
+                    <p class="biggerInfo">365</p>
+                    <p class="greyInfo">Lorem ipsum</p>
+                </div>
+                <div class="col-12 slider-picture">
+                    <div class="roundSlider"><a href="#"></a></div>
+                </div>
+                <div class="col-12 slider-quote">
+                    <p id="quote">"Fusce dapbius, tellus ac cursus commodo, tortor mauris
+                        condimentum. Dois  mollis, est non commodo luctus, nisi erat"
+                    </p>
+                    <p id="quoteAuthor">
+                        LESALE CHRISTOPHER, PINTRETS
+                    </p>
+                </div>
+                <div class="col-12 slider-change">
+                    <a href="#" id="first-button" class="slider-link"><div class="slider-button"></div></a>
+                    <a href="#" id="second-button" class="slider-link"><div class="slider-button"></div></a>
+                    <a href="#" id="third-button" class="slider-link"><div class="slider-button"></div></a>
+                    <a href="#" id="fourth-button" class="slider-link"><div class="slider-button"></div></a>
+                    <a href="#" id="fifth-button" class="slider-link"><div class="slider-button"></div></a>
+                    <a href="#" id="sixth-button" class="slider-link"><div class="slider-button"></div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row portfolio-main" id="partSix">
+        <div class="grid-container portfolio-grid">
+            <div class="col-12 headPortfolio">
+                <p>Our <span>portfolio</span></p>
+            </div>
+            <div class="col-12 portfolio-menu">
+                <ul>
+                    <li class="portfolio-button">ALL</li>
+                    <li class="portfolio-button">WEB</li>
+                    <li class="portfolio-button">APPS</li>
+                    <li class="portfolio-button">ICONS</li>
+                </ul>
+            </div>
+            <div class="col-4 portfolio-picture">
+                <div class="pictureFolio"></div>
+                <div class="textPicture">
+                    <p class="bigInfoPicture">Neque Porro Quisquam</p>
+                    <p class="smallInfoPicture">apps, icons, ui</p>
+                </div>
+            </div>
+            <div class="col-4 portfolio-picture">
+                <div class="pictureFolio"></div>
+                <div class="textPicture">
+                    <p class="bigInfoPicture">Neque Porro Quisquam</p>
+                    <p class="smallInfoPicture">apps, icons, ui</p>
+                </div>
+            </div>
+            <div class="col-4 portfolio-picture">
+                <div class="pictureFolio"></div>
+                <div class="textPicture">
+                    <p class="bigInfoPicture">Neque Porro Quisquam</p>
+                    <p class="smallInfoPicture">apps, icons, ui</p>
+                </div>
+            </div>
+            <div class="col-4 portfolio-picture">
+                <div class="pictureFolio"></div>
+                <div class="textPicture">
+                    <p class="bigInfoPicture">Neque Porro Quisquam</p>
+                    <p class="smallInfoPicture">apps, icons, ui</p>
+                </div>
+            </div>
+            <div class="col-4 portfolio-picture">
+                <div class="pictureFolio"></div>
+                <div class="textPicture">
+                    <p class="bigInfoPicture">Neque Porro Quisquam</p>
+                    <p class="smallInfoPicture">apps, icons, ui</p>
+                </div>
+            </div>
+            <div class="col-4 portfolio-picture">
+                <div class="pictureFolio"></div>
+                <div class="textPicture">
+                    <p class="bigInfoPicture">Neque Porro Quisquam</p>
+                    <p class="smallInfoPicture">apps, icons, ui</p>
+                </div>
+            </div>
+            <div class="col-12 buttonMore">
+                <p class="buttonMorePicture"><a href="#">Watch more</a></p>
+            </div>
+        </div>
+    </section>
+    <section class="row contact-main" id="partSeven">
+        <div class="grid-container contact-grid">
+            <div class="col-6 input-Contact">
+                <form>
+                    <input type="text" name="firstname" value="First Name">
+                    <br style class="break">
+                    <input type="email" name="email" value="Your Email">
+                    <br>
+                    <textarea name="message" rows="10" col="30">
+                        Your message
+                    </textarea>
+                </form>
+            </div>
+            <div class="col-6 media-contact">
+                <div class="text-contact">
+                    lorem ispum dolar sit amet, consectetuer adipiscing elit.
+                    Donec odio. Quisque volutpat mattis eros.
+                    Nullam malesuda erat ut turpis. Suspendisse urna,
+                    nibh, vivvere non, semper suscipit, posuere a, pede
+                </div>
+                <div class="adresse-contact">
+                    1600 Pennsylvania AVE NW, Washigton,
+                    DC 20500, United States of America
+                </div>
+                <div class="mobile-contact">
+                    T:(202) 456-1111
+                    <br>M:(202) 456-1212
+                </div>
+                <div class="e-contact">
+                    <ul>
+                        <a href="#"><li>f</li></a>
+                        <a href="#"><li>t</li></a>
+                        <a href="#"><li>g</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="row">
+        <div class="grid-container footer-grid">
+            <div class="col-12 footerLogo">
+                Bhagas<span>kara</span>.
+            </div>
+        </div>
+    </footer>
 </body>

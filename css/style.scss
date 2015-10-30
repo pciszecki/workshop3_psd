@@ -10,6 +10,10 @@ html {
 * {
   margin: auto;
   font-family: $fontFamily;
+  a {
+    color: #676767;
+    text-decoration: none;
+  }
 }
 .grid-container {
   width: 100%;
@@ -18,14 +22,12 @@ html {
 .grid-container *{
   box-sizing: border-box;
 }
-
 .row:before,
 .row:after {
   content:"";
   display: table;
   clear: both;
 }
-
 [class*='col-'] {
   float: left;
   min-height: 1px;
@@ -71,13 +73,13 @@ header {
 nav {
   .pictureSize{
     margin: 5% 0;
-    width: 80%;
+    width: 75%;
   }
   .pictureUpMenu {
     margin-top: -15%;
   }
   .headerMenuDiv {
-    background-size: 85% auto;
+    background-size:75% auto;
     background-image: url("../images/icon-base.png");
     background-repeat: no-repeat;
   }
@@ -104,6 +106,9 @@ nav {
   }
   .mainMenu:hover {
     color: #A957A5;
+    }
+  a:hover {
+    color: #A957A5;
   }
 }
 
@@ -117,7 +122,7 @@ nav {
       #heart {
         margin-top: 10%;
         margin-bottom: 5%;
-        background-size: 52%;
+        background-size: 48%;
         width: 59%;
         background-image: url("../images/aboutus/heatrIcon.png");
         background-repeat: no-repeat;
@@ -131,7 +136,7 @@ nav {
       #diamond {
          margin-top: 10%;
          margin-bottom: 5%;
-         background-size: 52%;
+         background-size: 48%;
          width: 59%;
          background-image: url("../images/aboutus/diamondIcon_13.png");
          background-repeat: no-repeat;
@@ -145,7 +150,7 @@ nav {
       #teaCup {
         margin-top: 10%;
         margin-bottom: 5%;
-        background-size: 52%;
+        background-size: 48%;
         width: 59%;
         background-image: url("../images/aboutus/teaIcon_16.png");
         background-repeat: no-repeat;
@@ -159,7 +164,7 @@ nav {
       #smartphone {
         margin-top: 10%;
         margin-bottom: 5%;
-        background-size: 52%;
+        background-size: 48%;
         width: 59%;
         background-image: url("../images/aboutus/phoneIcon_18.png");
         background-repeat: no-repeat;
@@ -185,6 +190,9 @@ nav {
   .aboutUsHead {
     text-align: center;
     padding: 5% 0 5% 0;
+    p {
+      font-size: 4rem;
+    }
   }
   .mockUp {
     img {
@@ -212,11 +220,12 @@ nav {
 .quoteWidth {
   background-image: url('../images/quoteBackground_32.png');
   background-repeat: no-repeat;
-  padding-bottom: 34%;
+  padding-bottom: 41%;
   background-size: contain;
   height: 0;
+  margin-top: 5%;
   .iconQuote {
-    margin: 15% 0 5% 0;
+    margin: 5% 0 5% 0;
     background-image: url("../images/icon-base.png");
     background-repeat: no-repeat;
     background-position: center top;
@@ -225,6 +234,7 @@ nav {
   img {
     display: block;
     margin: auto;
+    width: 13%;
   }
   .textQuote {
     text-align: center;
@@ -233,6 +243,7 @@ nav {
   }
 }
 .ourTeam {
+  margin-top: -5%;
 .ourTeamLogo {
   text-align: center;
   font-size: 4rem;
@@ -241,12 +252,287 @@ nav {
   .arrowLeft {
     padding-left: 45%;
   }
+  .teamMember {
+    margin-top: 5%;
+  }
   .profilPicture {
-    margin-top: 8%;
+    margin-top: 14%;
+    margin-left: 20%;
     background-image: url('../images/ourteam/pictureProfil_03.gif');
     background-repeat: no-repeat;
     background-size: contain;
     padding-bottom: 65%;
     height: 0;
+  }
+  .teamInfo {
+    margin-top: 10%;
+    .googleLink {
+      padding-left: 5%;
+    }
+    h1 {
+      text-align: center;
+    }
+    p {
+      padding-top: 3%;
+      text-align: center;
+    }
+  }
+}
+.ourSkills {
+  .ourSkillsLogo {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .webMarg {
+    margin-top: 5%;
+    .bell-container {
+      width: 85%;
+      .headerWeb {
+        //float: left;
+      }
+      .exp {
+        float: right;
+      }
+      .bell-background {
+        clear: both;
+        width: 100%;
+        background-color: #f0f0f0;
+        height: 20px;
+        margin-top: 5%;
+        .bell-purple {
+          background-color: #9f449b;
+          display: inline-block;
+          height: 20px;
+          width: 90%;
+        }
+        .uiUxProc {
+          width: 85%;
+        }
+        .purpleHtml {
+          width: 75%;
+        }
+        .purpleGraphic {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+.servicesWidth {
+  background-image: url('../images/quoteBackground_32.png');
+  background-repeat: no-repeat;
+  padding-bottom: 45%;
+  background-size: contain;
+  height: 0;
+  margin-top: 5%;
+  .iconServices {
+    margin: 5% 0 5% 0;
+    background-image: url("../images/icon-base.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+  }
+  img {
+    display: block;
+    margin: auto;
+    width: 13%;
+  }
+  .textServices {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+  }
+}
+.slider-container {
+  margin: auto;
+  background-color: #eeeeee;
+  background-size: contain;
+  width: 100%;
+  margin-top: -14%;
+}
+.slider-grid {
+  margin-top: 4%;
+  .slider-info {
+    text-align: center;
+    .biggerInfo {
+      font-size: 5rem;
+    }
+    .greyInfo {
+      color: #777777;
+    }
+  }
+  .slider-picture {
+    .roundSlider {
+      margin-top: 10%;
+      margin-left: 40%;
+      background-image: url('../images/ourteam/pictureProfil_03.gif');
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding-bottom: 21%;
+      height: 0;
+    }
+  }
+  .slider-quote {
+    margin-top: 5%;
+    text-align: center;
+    color: #4b4b4b;
+    #quote {
+      font-size: 3rem;
+    }
+    #quoteAuthor {
+      margin-top: 1%;
+      font-size: 1.5rem;
+      color:#777777;
+    }
+  }
+  .slider-change {
+    margin-top: 1%;
+    text-align: center;
+    padding-bottom: 10%;
+    .slider-button {
+      margin-left: 1%;
+      border: 1px solid #797979;
+      border-radius: 50% 50%;
+      width: 11px;
+      height: 11px;
+      display: inline-block;
+    }
+    a:hover{
+      div {
+        background-color: #797979;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+.portfolio-main {
+ .portfolio-grid {
+   .headPortfolio {
+     margin-top: -5%;
+     text-align: center;
+     background: white;
+     background-size: contain;
+     padding-top: 3%;
+     padding-bottom: 10%;
+     p {
+       font-size: 3rem;
+     }
+   }
+   .portfolio-menu {
+     ul {
+       list-style:none;
+       text-align: center;
+       li {
+         display: inline-block;
+         border: 1px solid #000000;
+         font-size: 1rem;
+         width: 66px;
+         padding: 1%;
+         margin-left: 2%;
+       }
+       li:hover{
+         border:1px solid #9f449b;
+         background-color: #9f449b;
+         color: white;
+       }
+     }
+   }
+
+   .portfolio-picture {
+     margin-top: 3%;
+     .pictureFolio {
+       background-image: url('../images/portfolio/Folio_10.png');
+       background-repeat: no-repeat;
+       background-size: contain;
+       width: 87%;
+       padding-bottom: 80%;
+       height: 0
+     }
+     .textPicture {
+       text-align: center;
+       .bigInfoPicture {
+         margin-top: 2%;
+         font-size: 1.5rem;
+       }
+       .smallInfoPicture{
+         margin-top: 2%;
+         font-size: 1rem;
+       }
+     }
+   }
+   .buttonMore {
+     margin-top: 5%;
+     p {
+       text-align: center;
+       font-size: 2rem;
+       border: 1px solid #9f449b;
+       background-color: #9f449b;
+       width: 15%;
+       color: white;
+       box-shadow: 0 3px 3px 0 rgba(0,0,0,0.75);
+       a {
+         text-decoration: none;
+         color: white;
+       }
+     }
+     a:hover {
+       color: black;
+     }
+     p:hover{
+       box-shadow: 0 3px 3px 0 rgba(255,255,255,0.75);
+     }
+   }
+ }
+}
+.contact-grid {
+  margin-top: 3%;
+  br {
+    margin-top: 3%;
+  }
+  .media-contact {
+    .text-contact {
+      margin: 2% 1% 0 1%;
+    }
+    .adresse-contact{
+      margin: 3% 1% 0 1%;
+    }
+    .mobile-contact{
+      margin: 3% 1% 0 1%;
+    }
+    .e-contact{
+      margin: 3% 1% 0 1%;
+      ul {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: black;
+          li {
+            padding-top: 1%;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            border-radius: 50% 50%;
+            border: 1px solid black;
+          }
+          li:hover{
+            background-color: #9f449b;
+            border: 1px solid #9f449b;
+          }
+        }
+        a:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 5%;
+  .footerLogo {
+    text-align: center;
+    font-size: 2rem;
   }
 }
