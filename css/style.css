@@ -116,6 +116,14 @@ nav .headerMenuDiv {
     color: #A957A5; }
   .mainMenu-container a:hover {
     color: #A957A5; }
+  .mainMenu-container .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    margin: 0; }
 
 .featureBackground {
   background-color: #eeeeee;

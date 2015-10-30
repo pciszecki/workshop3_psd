@@ -14,6 +14,7 @@
 var app = new Application();
 app.init();*/
 
+//slider that goes down. Works. DNT.
 $(document).ready(function () {
     function getHref(element) {
         return $(element).attr('href');
@@ -34,10 +35,23 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $(href).offset().top
         }, 2000);
-    })
+    });
+    var myNavigation = $('.nav');
+    console.log(myNavigation);
+    var myMenuPosition = myNavigation.offset().top;
+    console.log(myMenuPosition);
+
+    $(document).on('scroll', function () {
+        var scrollPosition = $(window).scrollTop();
+        console.log(scrollPosition);
+
+        if (scrollPosition > myMenuPosition) {
+            myNavigation.addClass('sticky');
+        } else {
+            myNavigation.removeClass('sticky');
+        }
+    });
 });
-
-
     //$(".scrollerContact").on('click', function (event) {
     //    event.preventDefault();
     //    function getHref(){
